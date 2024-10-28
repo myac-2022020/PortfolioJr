@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Airborne II', sans-serif;
+}
+
+.linkPrincipal{
+  text-decoration: none;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+.linkPrincipal:hover{
+  color: #f00;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+  font-family: 'Airborne II', sans-serif;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f00;
+}
+
+.icono {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+  border: none;
+}
+
+.principal {
+  width: 100vw;
+  height: auto;
+}
+
+.frontPage {
+  width: 100vw;
+  height: 99vh;
+  position: absolute;
+  z-index: 0;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menu{
+  display: none;
+}
+
+.container-principal{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.principalText{
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+  z-index: 1;
+  font-family: 'Airborne II', sans-serif;
+}
+
+.introducction{
+  width: 100vw;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Show nav links when menu toggle is checked */
+  input[type="checkbox"]:checked ~ .nav-links {
+    display: flex;
+  }
+}
