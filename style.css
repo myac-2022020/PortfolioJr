@@ -4,24 +4,34 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
 
 .navbar {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
   flex-wrap: wrap;
-  position: absolute;
-  z-index: 1;
+  z-index: 1000;
   width: 100%;
+  transition: background-color 0.5s;
+}
+
+.navbar.scrolled{
+  background-color: rgba(0, 0, 0, 0.7)
 }
 
 .logo {
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
   font-family: 'Airborne II', sans-serif;
 }
@@ -33,7 +43,7 @@ body {
 }
 
 .linkPrincipal:hover{
-  color: #f00;
+  color: #FFC107;
 }
 
 .nav-links {
@@ -55,7 +65,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #f00;
+  color: #FFC107;
 }
 
 .icono {
@@ -66,14 +76,16 @@ body {
 }
 
 .principal {
-  width: 100vw;
+  width: 100%;
   height: auto;
+  position: relative;
 }
 
 .frontPage {
-  width: 100vw;
+  width: 100%;
   height: 99vh;
   position: absolute;
+  top: 0;
   z-index: 0;
 }
 
@@ -103,9 +115,484 @@ body {
   font-family: 'Airborne II', sans-serif;
 }
 
-.introducction{
-  width: 100vw;
+.introduction{
+  width: 98.8vw;
   height: auto;
+  padding-top: 10vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+.introduction h1{
+  text-align: center;
+  color: #f00;
+  padding-bottom: 1vh;
+  font-family: 'Airborne II', sans-serif;
+}
+
+.box-text{
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.intro-image{
+  width: 50%;
+  height: auto;
+  padding: 0.5em;
+}
+
+.principal-introduction{
+  font-family: 'Flama Light Italic', sans-serif;
+  font-size: 1.2em;
+}
+
+.experience-skills{
+  padding-top: 4vw;
+  color: #3C1Aff; 
+  font-family: 'Airborne II', sans-serif; 
+  font-style: italic;
+}
+
+.experience{
+  width: 98.8vw;
+  padding-top: 10vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+.text-experience{
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.30);
+}
+
+.experience h1{
+  text-align: center;
+  color: #f00;
+  padding-bottom: 1vh;
+  font-family: 'Airborne II', sans-serif;
+}
+
+.experience h2{
+  text-align: left;
+  color: #000;
+  font-family: 'Airborne II', sans-serif;
+}
+
+.skills{
+  width: auto;
+  height: auto;
+  padding-top: 10vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  display: inline-block;
+}
+
+.name-skill{
+  text-align: center;
+  color: #f00;
+  padding-bottom: 1vh;
+  font-family: 'Airborne II', sans-serif;
+  font-style: italic;
+}
+
+.image-skills{
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.30);
+}
+
+.projects{
+  width: 98.8vw;
+  padding: 10vh 1vw 0 1vw;
+}
+
+.projects h1{
+  text-align: center;
+  color: #f00;
+  padding-bottom: 1vh;
+  font-family: 'Airborne II', sans-serif;
+}
+
+.profile-card {
+  margin: 3vw;
+  width: 25vw;
+  height: auto;
+  background-color: #fefefe;
+  border-radius: 1rem;
+  color: #141417;
+  display: inline-block;
+}
+
+.profile-card__hero {
+  background-color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 0.875rem;
+}
+
+.profile-card__hero .profile-card__job-title {
+  margin: 1vw 1vh 0 1vw;
+  font-size: 2vw;
+  font-weight: 600;
+  padding-right: 2rem;
+  font-family: 'Airborne II', sans-serif;
+  font-style: italic;
+}
+
+.profile-card__job-content{
+  color: #000;
+  font-family: 'Flama Light Italic', sans-serif;
+  padding: 1vw;
+}
+
+.profile-card__header {
+  padding: 0 1vw 0 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  font-weight: 700;
+  font-family: 'Airborne II', sans-serif;
+  font-style: italic;
+}
+
+.project_image{
+  width: 100%;
+}
+
+.profile-card__footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0.75rem;
+  row-gap: 1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.content-link{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.link-icon {
+  width: 30%;
+  cursor: pointer;
+}
+
+.link-project {
+  color: #000;
+  font-size: 90%;
+  text-decoration: none;
+  font-family: 'Airborne II', sans-serif;
+  font-style: italic;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease ,opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.link-icon:hover + .link-project {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  color: #00f;
+}
+
+.link-project:hover {
+  opacity: 1;
+  visibility: visible;
+  color: #000;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contactMe{
+  width: 100%;
+  background-color: #000;
+  margin-top: 1%;
+  padding: 1% 1% 2% 1%;
+}
+
+.contactMe h1{
+  color: #fff;
+  font-family: 'Airborne II', sans-serif;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.direct-message{
+  width: 100%;
+}
+
+/* From Uiverse.io by alexruix */ 
+.input-group {
+  position: relative;
+  display: inline-block;
+  width: 49.5%;
+  margin-bottom: 2%;
+ }
+ 
+ .input {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  font-family: 'Flama Light Italic', sans-serif;
+  overflow-y: hidden;
+  resize: none;/
+}
+
+ 
+ .user-label {
+  position: absolute;
+  left: 15px;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  font-family: 'Airborne II', sans-serif;
+  font-style: italic;
+ }
+ 
+ .input:focus, input:valid {
+  outline: none;
+  border: 1.5px solid #C68346;
+ }
+ 
+ .input:focus ~ label, .input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #000;
+  padding: 0 .2em;
+  color: #EDE8D0;
+ }
+
+.direct-message p{
+  color: #fff;
+  font-size: 100%;
+  font-family: 'Airborne II', sans-serif;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.send-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #07014e, #000000, #000000);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+.send-button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.send-button p {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.send-button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+.send-button:hover p {
+  transform: translateX(7px);
+}
+
+.socials{
+  width: 100%;
+  height: auto;
+  padding-top: 3vw;
+}
+
+.social-links,.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-socials{
+  color: #fff;
+  position: absolute;
+  left: 0;
+  font-family: 'Airborne II', sans-serif;
+  font-style: italic;
+  font-size: 3vw;
+  padding-left: 10px;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Flama Light Italic', sans-serif;
+  font-style: italic;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: linear-gradient(to right, #d6d6d6, #333, #000);
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 50px;
+  width: 50px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #000, #0000, #000);
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 120px;
+}
+
+#instagram span {
+  background: linear-gradient(
+    45deg,
+    #C13584, /* Púrpura */
+    #F44C89, /* Rosa */
+    #FDAF49, /* Naranja */
+    #e0aa20, /* Amarillo */
+    #5851DB  /* Azul */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#github span{
+  color: #fff;
+}
+
+#github:hover{
+  fill: #fff;
+}
+
+#linkedin span {
+  background: linear-gradient(
+    45deg,
+    #0077B5, /* Azul LinkedIn */
+    #00A0DC, /* Azul claro */
+    #E7E9ED  /* Gris claro */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+footer{
+  background: #000;
+  color: #fff;
+  font-family: 'Flama Light Italic', sans-serif;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 340px) {
+  .profile-card__footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .profile-card {
+    width: 40vw; /* Aumenta el tamaño para adaptarse mejor */
+    margin: 5vw auto; /* Centra el perfil */
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 80vw; /* Ocupa la mayor parte del ancho */
+    margin: 5vw auto;
+  }
+}
+
+/* Para pantallas muy pequeñas (teléfonos compactos) */
+@media (max-width: 480px) {
+  .profile-card {
+    width: 90vw;
+    margin: 3vw auto;
+  }
+}
+
+.profile-card__job-summary {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+}
+
+.profile-card__btn {
+  width: 100%;
+  font-weight: 400;
+  border: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1rem;
+  background-color: #141417;
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media (min-width: 340px) {
+  .profile-card__btn {
+    width: max-content;
+  }
 }
 
 @media (max-width: 768px) {
@@ -128,8 +615,367 @@ body {
     display: block;
   }
 
-  /* Show nav links when menu toggle is checked */
   input[type="checkbox"]:checked ~ .nav-links {
     display: flex;
+  }
+  .image-skills svg{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1200px){
+  .introduction {
+    padding-top: 5vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+
+  .box-text {
+    flex-direction: column; /* Cambia el diseño a una columna */
+    text-align: center; /* Centra el texto */
+  }
+
+  .intro-image {
+    max-width: 80%; /* Haz que la imagen ocupe menos espacio */
+    margin: 0 auto; /* Centra la imagen */
+  }
+
+  .principal-introduction {
+    font-size: 0.9em; /* Reduce ligeramente el tamaño de fuente */
+    padding: 1em; /* Asegura que tenga suficiente espacio */
+  }
+}
+
+@media (max-width: 480px) {
+  .principal-introduction {
+    font-size: 0.8em; /* Más pequeño para pantallas compactas */
+  }
+
+  .intro-image {
+    max-width: 100%; /* La imagen ocupa todo el ancho disponible */
+  }
+}
+
+
+/* Reloj y clima*/
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  margin-top: 5%;
+  z-index: 1;
+  right: 0;
+  width: 20vW;
+  height: 10vh;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  margin-right: 1%;
+}
+
+/* Landscape section */
+.landscape-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.landscape-section * {
+  position: absolute;
+}
+
+.sky {
+  width: 100%;
+  height: 100%;
+  background: rgb(247, 225, 87);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 148, 1) 100%
+  );
+  transition: all 2s ease;
+}
+
+.sun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 35%;
+  border-radius: 50%;
+  background-color: white;
+  bottom: 40%;
+  left: 10%;
+  filter: drop-shadow(0px 0px 10px white);
+}
+
+.sun::after {
+  position: absolute;
+  content: "";
+  width: 118%;
+  height: 118%;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.sun::before {
+  position: absolute;
+  content: "";
+  width: 134%;
+  height: 134%;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.filter {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  z-index: 5;
+  opacity: 0.2;
+}
+
+/* Content section */
+.content-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 15px;
+  color: white;
+  z-index: 10;
+}
+
+.weather-info .right-side {
+  position: absolute;
+  right: 0;
+}
+
+.weather-info .right-side p:nth-child(2) {
+  font-size: 9pt;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-info .location span {
+  font-size: 11pt;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.clock{
+  color: #fff;
+  display: flex;
+  text-align: right;
+  font-size: 55%;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 25vw;
+    height: 12vh;
+  }
+
+  .clock {
+    font-size: 65%;
+  }
+
+  .principalText {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1020px) {
+  .card {
+    width: 30%;
+    height: 3%;
+  }
+
+  .clock h3{
+    font-size: 65%;
+    position: relative;
+    right: 0;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  .principalText {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 830px) {
+  .card {
+    width: 32%;
+    right: 5%;
+    margin-top: 10%;
+  }
+  .sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 40%;
+    left: 10%;
+    filter: drop-shadow(0px 0px 10px white);
+  }
+
+  .principalText {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 35%;
+    right: 5%;
+    margin-top: 10%;
+  }
+  .sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 40%;
+    left: 10%;
+    filter: drop-shadow(0px 0px 10px white);
+  }
+
+  .principalText {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 710px) {
+  .card {
+    width: 38%;
+    right: 5%;
+    margin-top: 10%;
+  }
+  .sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 40%;
+    left: 10%;
+    filter: drop-shadow(0px 0px 10px white);
+  }
+
+  .principalText {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: 40%;
+    right: 5%;
+    margin-top: 10%;
+  }
+  .sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 40%;
+    left: 10%;
+    filter: drop-shadow(0px 0px 10px white);
+  }
+
+  .clock{
+    font-size: 55%;
+  }
+
+  .principalText {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 530px) {
+  .card {
+    width: 40%;
+    right: 5%;
+    margin-top: 10%;
+  }
+  .sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 40%;
+    left: 10%;
+    filter: drop-shadow(0px 0px 10px white);
+  }
+
+  .clock{
+    font-size: 50%;
+  }
+
+  .principalText {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 40%;
+    right: 5%;
+    margin-top: 10%;
+  }
+  .sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 40%;
+    left: 10%;
+    filter: drop-shadow(0px 0px 10px white);
+  }
+
+  .clock{
+    font-size: 40%;
+    text-align: center;
+  }
+
+  .principalText {
+    font-size: 1em;
   }
 }

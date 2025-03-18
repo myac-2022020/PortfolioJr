@@ -6,6 +6,11 @@
   <title>ᴘᴏʀᴛꜰᴏʟɪᴏ | ᴍɪɢᴜᴇʟ ʏᴀᴄ</title>
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/flama-light-italic" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./main.js" defer></script>
   <link rel="icon" href="./img/logoPagina.png" type="image/x-icon">  
 </head>
 <body>
@@ -16,20 +21,383 @@
         <input type="checkbox" id="menu-toggle" class="menu">
         <label for="menu-toggle" class="menu-toggle">&#9776;</label>
         <ul class="nav-links">
-          <li><a href="#"><i>Introduction</i></a></li>
-          <li><a href="#"><i>Experience</i></a></li>
-          <li><a href="#"><i>Projects</i></a></li>
-          <li><a href="#"><i>Contact</i></a></li>
+          <li><a href="#introduction"><i>Introduction</i></a></li>
+          <li><a href="#experience"><i>Experience</i></a></li>
+          <li><a href="#projects"><i>Projects</i></a></li>
+          <li><a href="#contact"><i>Contact</i></a></li>
         </ul>
       </nav>
     </header>
     <div class="container-principal">
       <img src="./img/portafolio-programador.jpeg" alt="frontPage" class="frontPage">
-      <i class="principalText">Welocome to <br><b>My Portfolio</b></i>
+      <i class="principalText">Welcome to <br><b>My Portfolio</b></i>
+      <div class="card">
+        <section class="landscape-section">
+          <div class="sky"></div>
+          <div class="sun"></div>
+          <div class="filter"></div>
+        </section>
+        <section class="content-section">
+          <div class="weather-info">
+            <div class="right-side">
+              <h3><b id="date" class="clock"></b></h5> 
+              <b translate="no" class="clock" id="clock"></b>
+              <b translate="no" class="clock" id="greeting"></b>
+            </div>
+          </div>
+        </section>
+      </div>      
     </div>
-    <div class="introduction">
+    <div id="introduction" class="introduction">
+      <h1><i>Introduction</i></h1>
+      <div class="box-text">
+        <img src="./img/Robot 3D Animated Icon.gif" alt="" class="intro-image">
+        <p class="principal-introduction">
+          Hello, I'm Miguel, a dedicated and passionate programmer driven by a desire to create innovative and efficient solutions that address complex challenges in the world of technology. As a recent graduate from the prestigious Kinal Foundation, I have honed my expertise in software development, particularly in back-end programming, while embracing a mindset of continuous growth and learning.
+          My primary focus lies in advancing my skills as a programmer, particularly in web development and Java programming. I'm equally enthusiastic about exploring the fascinating realms of artificial intelligence and leveraging its potential to solve intricate software problems. My commitment to staying ahead in this fast-paced industry drives me to consistently adopt and adapt to new technologies while refining my technical abilities.
+          <br><br>
+          This portfolio serves as a window into my professional journey, showcasing projects that reflect not only my dedication to quality and innovation but also my hunger for knowledge and growth. Each project is a testament to my problem-solving approach, attention to detail, and ability to translate ideas into functional, user-centered solutions.
+          Beyond my technical skills, you will also find my achievements and a deeper insight into who I am as a professional and an individual. I'm eager to connect with like-minded professionals and organizations that value creativity, collaboration, and a commitment to excellence.
+        </p>
+      </div>
+    </div>
+    <div class="experience" id="experience">
+      <h1><i>Experience</i></h1>
+      <div class="text-experience">
+        <h2 style="font-size: 1.3em"><i style="color: #00f;">Casa Médica </i>|<i> IT Assistant</i></h2>
+        <p class="principal-introduction"><i><b>19/08/2024 - 26/10/2024</b></i></p>
+        <p class="principal-introduction">In Casa Médica i had my first experience in the world of work,
+          this process it was part of my practices and my last passed for my professional formation. In that place I learned a lot about 
+          networks and how the infrastructure and support area works.
+          <br><br>
+          I developed new skills how:
+          <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif; font-size: 1.1em;">Computer equipment maintenance</li>
+          <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif; font-size: 1.1em;">Basic repair of computer equipment</li>
+          <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif; font-size: 1.1em;">Programming in Power Apps</li>
+          <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif; font-size: 1.1em;">Network knowledge</li>
+        </p>
+      </div>
+       <div class="experience-skills" style="margin-top: 1vh;">
+        <p class="principal-introduction">
+          And as additional information, I possess some skills that might interest you.
+        </p>
+      </div>
+      <div class="skills">
+        <p class="name-skill">Java</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 48 48">
+            <path fill="#F44336" d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"></path><path fill="#F44336" d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z"></path><g><path fill="#1565C0" d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z"></path><path fill="#1565C0" d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z"></path><path fill="#1565C0" d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z"></path><path fill="#1565C0" d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z"></path><path fill="#1565C0" d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z"></path></g>
+          </svg>
+        </div>
+      </div>
+      <div class="skills">
+        <p class="name-skill">Javascript</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 48 48">
+            <path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="skills">
+        <p class="name-skill">HTML</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 48 48">
+            <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+          </svg>        
+        </div>
+      </div>
+      <div class="skills">
+        <p class="name-skill">CSS</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 48 48">
+            <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="skills">
+        <p class="name-skill">MySQL</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0,0,256,256">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M0.002,35.041h1.92v-7.085l2.667,6.057c0.329,0.755 0.779,1.022 1.662,1.022c0.883,0 1.315,-0.267 1.644,-1.022l2.667,-5.902v6.93h1.92v-7.258c0,-0.697 -0.277,-1.035 -0.849,-1.209c-1.367,-0.43 -2.285,-0.059 -2.7,0.872l-2.735,6.16l-2.649,-6.16c-0.398,-0.93 -1.332,-1.302 -2.7,-0.872c-0.572,0.174 -0.849,0.511 -0.849,1.208v7.258h0.002z" fill="#004779"></path><path d="M13.441,29.281h1.92v4.055c-0.015,0.2 0.064,0.731 0.99,0.745c0.472,0.008 2.821,0 2.85,0v-4.8h1.92c0.008,0 0,5.968 0,5.993c0.01,1.472 -1.828,1.662 -2.673,1.687h-5.006v-0.96c0.01,0 4.787,0.001 4.801,0c1.088,-0.115 0.959,-0.714 0.959,-0.896v-0.064h-3.012c-1.67,-0.015 -2.735,-0.751 -2.747,-1.59c-0.002,-0.078 0.036,-4.134 -0.002,-4.17z" fill="#004779"></path><path d="M22.081,35.041h4.807c0.63,0 1.242,-0.132 1.728,-0.36c0.81,-0.372 1.144,-0.875 1.144,-1.536v-1.368c0,-1.476 -1.83,-1.536 -2.88,-1.536h-1.92c-0.755,0 -0.87,-0.456 -0.96,-0.96v-0.96c0.09,-0.384 0.258,-0.9 0.923,-0.96c0.773,0 4.836,0 4.836,0v-0.96h-4.566c-0.755,0 -3.114,0.09 -3.114,1.92v1.187c0,0.84 0.738,1.524 2.34,1.692c0.18,0.012 0.36,0.024 0.539,0.024c0,0 1.866,-0.036 1.92,-0.024c1.08,0 0.96,0.84 0.96,0.96v0.96c0,0.132 -0.03,0.96 -0.971,0.96c-0.072,0 -4.789,0 -4.789,0v0.961z" fill="#f57f17"></path><path d="M40.32,33.08c0,1.159 0.655,1.809 2.392,1.939c0.162,0.011 0.325,0.021 0.488,0.021h4.8v-0.96h-4.435c-0.991,0 -1.325,-0.416 -1.325,-1.011v-6.669h-1.92z" fill="#f57f17"></path><path d="M30.704,33.121v-4.8c0,-1.02 0.5,-1.724 1.916,-1.92h0.672h3.447h0.525c1.416,0.196 2.08,0.899 2.08,1.92v4.782c0,0.827 -0.215,1.271 -0.916,1.559l1.488,1.338h-2.16l-1.07,-0.96h-1.257l-2.136,0.012c-0.309,0 -0.635,-0.043 -0.993,-0.141c-1.074,-0.293 -1.596,-0.857 -1.596,-1.79zM32.624,33.121c0.098,0.467 0.473,0.96 1.14,0.96h1.864l-1.068,-0.96h2.175l0.519,0.482c0,0 0.186,-0.152 0.186,-0.482c0,-0.33 -0.016,-4.8 -0.016,-4.8c-0.098,-0.434 -0.538,-0.96 -1.188,-0.96h-2.471c-0.749,0 -1.14,0.548 -1.14,1.058l-0.001,4.702z" fill="#f57f17"></path><path d="M46.199,25.389c-1.031,-0.028 -1.818,0.068 -2.491,0.351c-0.191,0.081 -0.496,0.083 -0.528,0.323c0.105,0.11 0.121,0.275 0.205,0.41c0.16,0.26 0.432,0.609 0.674,0.791c0.265,0.2 0.538,0.414 0.821,0.587c0.504,0.307 1.067,0.483 1.553,0.791c0.286,0.181 0.57,0.411 0.85,0.615c0.138,0.102 0.23,0.259 0.41,0.323c0,-0.01 0,-0.019 0,-0.029c-0.094,-0.12 -0.119,-0.285 -0.205,-0.411c-0.127,-0.127 -0.254,-0.254 -0.381,-0.381c-0.372,-0.494 -0.846,-0.929 -1.348,-1.289c-0.401,-0.288 -1.298,-0.677 -1.466,-1.143c-0.01,-0.01 -0.019,-0.019 -0.03,-0.03c0.284,-0.032 0.617,-0.135 0.879,-0.205c0.441,-0.118 0.834,-0.087 1.289,-0.205c0.205,-0.059 0.41,-0.117 0.615,-0.176c0,-0.039 0,-0.078 0,-0.117c-0.23,-0.236 -0.395,-0.548 -0.645,-0.762c-0.657,-0.559 -1.373,-1.117 -2.11,-1.583c-0.409,-0.258 -0.915,-0.426 -1.348,-0.645c-0.146,-0.074 -0.402,-0.112 -0.498,-0.234c-0.228,-0.29 -0.351,-0.659 -0.527,-0.996c-0.368,-0.708 -0.73,-1.482 -1.055,-2.227c-0.223,-0.508 -0.368,-1.01 -0.645,-1.466c-1.331,-2.188 -2.764,-3.509 -4.982,-4.807c-0.472,-0.276 -1.041,-0.385 -1.642,-0.528c-0.323,-0.019 -0.645,-0.039 -0.968,-0.059c-0.197,-0.083 -0.401,-0.323 -0.587,-0.44c-0.735,-0.465 -2.621,-1.475 -3.165,-0.147c-0.344,0.838 0.514,1.656 0.821,2.081c0.215,0.298 0.491,0.632 0.645,0.968c0.101,0.22 0.119,0.441 0.205,0.674c0.213,0.574 0.55,1.228 0.826,1.759c0.139,0.269 0.293,0.551 0.469,0.791c0.108,0.147 0.293,0.212 0.323,0.44c-0.181,0.253 -0.191,0.646 -0.293,0.968c-0.458,1.445 -0.285,3.24 0.381,4.308c0.204,0.328 0.686,1.032 1.348,0.762c0.579,-0.236 0.45,-0.967 0.615,-1.612c0.037,-0.146 0.014,-0.253 0.088,-0.351c0,0.01 0,0.019 0,0.03c0.176,0.351 0.351,0.704 0.528,1.055c0.391,0.629 1.084,1.286 1.67,1.73c0.304,0.23 0.544,0.628 0.938,0.762c0,-0.01 0,-0.019 0,-0.03c-0.01,0 -0.019,0 -0.03,0c-0.076,-0.119 -0.196,-0.168 -0.293,-0.264c-0.229,-0.225 -0.485,-0.504 -0.674,-0.762c-0.534,-0.725 -1.006,-1.519 -1.436,-2.345c-0.205,-0.395 -0.384,-0.829 -0.557,-1.231c-0.067,-0.155 -0.066,-0.389 -0.205,-0.469c-0.19,0.294 -0.468,0.532 -0.615,0.879c-0.234,0.555 -0.265,1.233 -0.351,1.934c-0.052,0.018 -0.029,0.006 -0.059,0.029c-0.408,-0.099 -0.552,-0.518 -0.704,-0.879c-0.384,-0.912 -0.455,-2.38 -0.117,-3.429c0.087,-0.272 0.482,-1.127 0.323,-1.378c-0.076,-0.251 -0.328,-0.396 -0.468,-0.587c-0.175,-0.236 -0.348,-0.548 -0.469,-0.821c-0.314,-0.711 -0.612,-1.538 -0.943,-2.257c-0.158,-0.344 -0.425,-0.691 -0.645,-0.996c-0.243,-0.338 -0.516,-0.587 -0.704,-0.996c-0.067,-0.145 -0.158,-0.378 -0.059,-0.528c0.032,-0.101 0.076,-0.143 0.176,-0.176c0.17,-0.132 0.643,0.043 0.821,0.117c0.47,0.195 0.862,0.381 1.26,0.645c0.191,0.127 0.384,0.372 0.615,0.44c0.088,0 0.176,0 0.264,0c0.413,0.095 0.875,0.03 1.26,0.147c0.682,0.207 1.292,0.529 1.846,0.879c1.69,1.067 3.071,2.585 4.016,4.397c0.152,0.292 0.218,0.57 0.351,0.879c0.27,0.624 0.611,1.266 0.879,1.876c0.268,0.609 0.53,1.223 0.909,1.73c0.2,0.266 0.97,0.409 1.319,0.557c0.245,0.104 0.647,0.211 0.879,0.351c0.444,0.268 0.874,0.587 1.289,0.879c0.212,0.147 0.851,0.468 0.883,0.733z" fill="#004779"></path><path d="M33.098,14.223c-0.215,-0.004 -0.367,0.023 -0.528,0.059c0,0.01 0,0.019 0,0.03c0.01,0 0.019,0 0.03,0c0.103,0.21 0.283,0.347 0.41,0.528c0.098,0.205 0.195,0.41 0.293,0.615c0.01,-0.01 0.019,-0.019 0.029,-0.029c0.181,-0.128 0.265,-0.332 0.264,-0.645c-0.073,-0.077 -0.084,-0.173 -0.147,-0.264c-0.084,-0.123 -0.246,-0.192 -0.351,-0.294z" fill="#004779"></path></g></g>
+          </svg>
+        </div>
+      </div>
+      <div class="skills">
+        <p class="name-skill" translate="no">MongoDBCompass</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 48 48">
+            <path fill="#5d4037" d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z"></path><path fill="#4caf50" d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z"></path><path fill="#dcedc8" d="M23 28H25V36H23z"></path><path fill="#4caf50" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z"></path><path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="skills">
+        <p class="name-skill" translate="no">Power Apps</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 48 48">
+            <linearGradient id="xAGFPLBfYtwwGNe8fnA90a_jXuZmZPUKCPS_gr1" x1="6.674" x2="30.141" y1="10.224" y2="33.81" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#9d2f90"></stop><stop offset=".314" stop-color="#982e8d"></stop><stop offset=".666" stop-color="#8b2c83"></stop><stop offset="1" stop-color="#772874"></stop></linearGradient><path fill="url(#xAGFPLBfYtwwGNe8fnA90a_jXuZmZPUKCPS_gr1)" d="M18.926,44.317L2.49,25.23c-0.62-0.72-0.62-1.791,0-2.511L18.926,3.633 c0.755-0.877,2.104-0.877,2.859,0L38.22,22.719c0.62,0.72,0.62,1.791,0,2.511L21.785,44.317 C21.03,45.194,19.681,45.194,18.926,44.317z"></path><path d="M38.22,25.23c0.62-0.72,0.62-1.791,0-2.511L22.494,4.455l-5.812,6.215 c-1.199,1.344-1.185,3.364,0.037,4.702l7.696,8.265c0.176,0.193,0.176,0.482,0,0.674l-7.641,8.36 c-1.215,1.33-1.221,3.353-0.008,4.711l5.694,6.149L38.22,25.23z" opacity=".05"></path><path d="M38.22,25.23c0.62-0.72,0.62-1.791,0-2.511L22.822,4.836l-5.767,6.167 c-1.028,1.152-1.017,2.882,0.03,4.028l7.699,8.269c0.351,0.385,0.352,0.965,0,1.349l-7.641,8.36 c-1.042,1.141-1.048,2.872-0.01,4.035l5.656,6.108L38.22,25.23z" opacity=".07"></path><path d="M38.22,25.23c0.62-0.72,0.62-1.791,0-2.511L23.15,5.217l-5.722,6.118 c-0.856,0.96-0.848,2.4,0.022,3.354l7.703,8.273c0.526,0.577,0.526,1.447,0,2.023l-7.641,8.36c-0.868,0.95-0.876,2.391-0.013,3.357 l5.617,6.066L38.22,25.23z" opacity=".09"></path><linearGradient id="xAGFPLBfYtwwGNe8fnA90b_jXuZmZPUKCPS_gr2" x1="16.835" x2="39.082" y1="11.995" y2="38.287" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e286c5"></stop><stop offset=".413" stop-color="#e081c3"></stop><stop offset=".878" stop-color="#da74be"></stop><stop offset="1" stop-color="#d86fbc"></stop></linearGradient><path fill="url(#xAGFPLBfYtwwGNe8fnA90b_jXuZmZPUKCPS_gr2)" d="M45.518,22.745L28.257,3.658c-0.79-0.885-2.174-0.885-2.964,0l-7.492,8.011 c-0.683,0.765-0.676,1.923,0.015,2.68l7.707,8.277c0.697,0.764,0.697,1.933,0,2.697l-7.641,8.36 c-0.692,0.757-0.698,1.915-0.015,2.68l7.389,7.979c0.79,0.885,2.174,0.885,2.964,0l17.299-19.087 C46.156,24.54,46.156,23.46,45.518,22.745z"></path><linearGradient id="xAGFPLBfYtwwGNe8fnA90c_jXuZmZPUKCPS_gr3" x1="27.41" x2="45.997" y1="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f2a1c7"></stop><stop offset=".62" stop-color="#ed9ec8"></stop><stop offset="1" stop-color="#e799ca"></stop></linearGradient><path fill="url(#xAGFPLBfYtwwGNe8fnA90c_jXuZmZPUKCPS_gr3)" d="M35.322,33.484l-7.384-8.103c-0.704-0.773-0.704-1.989,0-2.762l7.384-8.103 c0.752-0.825,2.01-0.825,2.762,0l7.384,8.103c0.704,0.773,0.704,1.989,0,2.762l-7.384,8.103 C37.332,34.31,36.075,34.31,35.322,33.484z" opacity=".61"></path><path fill="none" d="M45.518,22.745L28.257,3.658c-0.79-0.885-2.174-0.885-2.964,0l-7.492,8.011 c-0.683,0.765-0.676,1.923,0.015,2.68l7.707,8.277c0.697,0.764,0.697,1.933,0,2.697l-7.641,8.36 c-0.692,0.757-0.698,1.915-0.015,2.68l7.389,7.979c0.79,0.885,2.174,0.885,2.964,0l17.299-19.087 C46.156,24.54,46.156,23.46,45.518,22.745z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="skills">
+        <p class="name-skill" translate="no">Bootstrap</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 48 48">
+            <path fill="#7c4dff" d="M7.373,11.443C7.293,9.132,9.094,7,11.529,7h24.946c2.435,0,4.236,2.132,4.155,4.443	c-0.077,2.221,0.023,5.097,0.747,7.443c0.726,2.353,1.951,3.84,3.957,4.031v2.167c-2.006,0.191-3.23,1.678-3.957,4.031	c-0.724,2.345-0.824,5.222-0.747,7.443C40.71,38.868,38.909,41,36.475,41H11.529c-2.434,0-4.236-2.132-4.155-4.443	c0.077-2.221-0.023-5.097-0.747-7.443c-0.726-2.353-1.954-3.84-3.96-4.031v-2.167c2.006-0.191,3.233-1.678,3.96-4.031	C7.35,16.54,7.451,13.664,7.373,11.443z"></path><path fill="#fff" d="M27.073,23.464v-0.028c1.853-0.32,3.299-2.057,3.299-3.97c0-1.352-0.52-2.498-1.504-3.312	c-0.981-0.812-2.357-1.241-3.981-1.241H17.45V33.08h7.475c1.942,0,3.555-0.474,4.663-1.372c1.109-0.899,1.696-2.207,1.696-3.783	C31.283,25.544,29.593,23.756,27.073,23.464z M23.59,22.608h-3.181V17.29h3.784c2.076,0,3.219,0.911,3.219,2.565	C27.413,21.63,26.055,22.608,23.59,22.608z M20.409,24.834h3.759c2.716,0,4.092,0.981,4.092,2.916c0,1.932-1.357,2.953-3.925,2.953	h-3.926V24.834z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="skills">
+        <p class="name-skill">Github</p>
+        <div class="image-skills">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200
+          " height="200" viewBox="0 0 50 50">
+            <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+        </svg>
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <h1><i>Projects</i></h1>
+      <!-- Conctructora -->
+      <article class="profile-card">
+        <section class="profile-card__hero">
+          <img src="./img/imagen-constructora.png" alt="" class="project_image">
+          <header class="profile-card__header">
+            <span>Personal Project</span>
+            <div class="profile-card__icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJklEQVR4nO2YPW7CQBSEh4KrBMQBoHXBTxPOg6igSk4QrsMB0iahSlJgOriApbxFK1mRbfCubVmrcfI+aRpLb3fG8wrLgKIodVkCiAEYUsUAHqsEORGYNR5Zj15+UrEiqbxokECINkKGaCNkiDZChmgjZIg2QoZoI2SINkKGaCNkiDZChmgjZIg20tVGPgn+JBqPrEcnfQAXAqPGo3PqtZSFY/gN4Xl3+Jm5BneOwQ3Cs3X4eSkb6gE4OgZHCM/Q80feer5hQrD7pqbG94I8ExgzNfV0L8ihpcP3FVZm39JdH8WDH1p8S1GFIFGL9w2yB68J1qSpVtkgrwSGmsp6/yUhMNRUSTFI7kFHSP5skC+CFWmq3JfwHMA3gSlTU7aAafA9UP4TV9S/yOKiFSQQAAAAAElFTkSuQmCC" alt="laptop">             
+            </div>
+          </header>
+          <p class="profile-card__job-title" translate="no">Constructora</p>
+          <p class="profile-card__job-content">
+            This project with name Constructora. With the objective aim of creating a application for a
+          tools's company that was a solution for the situation in 2020. This project as created with the objective to be managed
+          by clients with some privileges and the bosses with all privileges<br><br> Developed in Java and connected to MySQL.
+          </p>
+        </section>
+        <div class="content-link">
+          <img src="./img/Internet 3D Animated Icon.gif" alt="" class="link-icon">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/myac-2022020/Construction.git" class="link-project">Go to Github</a>
+        </div>
+      </article>
+
+      <!-- Tony's kinal -->
+      <article class="profile-card">
+        <section class="profile-card__hero">
+          <img src="./img/img-tonys.png" alt="" class="project_image">
+          <header class="profile-card__header">
+            <span>Personal Project</span>
+            <div class="profile-card__icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJklEQVR4nO2YPW7CQBSEh4KrBMQBoHXBTxPOg6igSk4QrsMB0iahSlJgOriApbxFK1mRbfCubVmrcfI+aRpLb3fG8wrLgKIodVkCiAEYUsUAHqsEORGYNR5Zj15+UrEiqbxokECINkKGaCNkiDZChmgjZIg2QoZoI2SINkKGaCNkiDZChmgjZIg20tVGPgn+JBqPrEcnfQAXAqPGo3PqtZSFY/gN4Xl3+Jm5BneOwQ3Cs3X4eSkb6gE4OgZHCM/Q80feer5hQrD7pqbG94I8ExgzNfV0L8ihpcP3FVZm39JdH8WDH1p8S1GFIFGL9w2yB68J1qSpVtkgrwSGmsp6/yUhMNRUSTFI7kFHSP5skC+CFWmq3JfwHMA3gSlTU7aAafA9UP4TV9S/yOKiFSQQAAAAAElFTkSuQmCC" alt="laptop">             
+            </div>
+          </header>
+          <p class="profile-card__job-title" translate="no">Tony's kinal</p>
+          <p class="profile-card__job-content">
+            This project as created with the purpose of handle the restaurant's services in events.This 
+          projects works with account and possess login for old users and register for new users. Only possess control for the bosses 
+          and all locations of this company in a list. Also have a list of all employees and your charge, a list of all plates, a list of products 
+          and all events with the assigned dishes. 
+          <br><br>
+          Developed in Java and connected to MySQL.
+          </p>
+        </section>
+        <div class="content-link">
+          <img src="./img/Internet 3D Animated Icon.gif" alt="" class="link-icon">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/myac-2022020/Tony-s_Kinal.git" class="link-project">Go to Github</a>
+        </div>
+      </article>
+
+      <!-- Movieshop -->
+      <article class="profile-card">
+        <section class="profile-card__hero">
+          <img src="./img/BannerMovieShop.gif" alt="" class="project_image">
+          <header class="profile-card__header">
+            <span>Group Project</span>
+            <div class="profile-card__icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABQ0lEQVR4nO2UO04DMRRFTw/04deA2AkUDNkGNQ2/UMJqUERFKEBZQBJ2gsRvaKgIetKNFHk8ybOldD7SU2T7zrXfnYmhUCj4OAEmwI9+q0xNFl1gGqkqUZPNq8yugDXgWuNxoiabWmbrGm9oXCdqspnIrKcNbiLdeTTZHAF/kfd7nKhxswP0FZ/VA3CmbuwLH7UYV4HmNOJz4Nn8PdKJzW0nNpHl05fwUUKrgebuEw6Q7VNLNH/KXc19BR0uitfr0+BbItug7UFPvB6fhdEN9LDVUxCdJ16PT5R9fcVhdza3lxCvxyfKXcudbnWbEK/HJ/o/ngK/wDmwqbrQ3OxiWRav16fBUIv2UMil1l4U7+w1zFeteL0+DT61aKcN2dLah+77tnh7CT5ZHDriNc3KeHbEa5qV8aZNOpG1jtZMUygU8PIPnUrg9TdInUMAAAAASUVORK5CYII=" alt="groups">
+            </div>
+          </header>
+          <p class="profile-card__job-title" translate="no">Movieshop</p>
+          <p class="profile-card__job-content">
+            This is best project of my career. Inspired in the movie stores online. Offering all our movies at affordable prices. 
+            Possess interface for bosses with privileges how: <br><br>
+            <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif;">
+              A list with all movies and details about them.
+            </li>
+            <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif;">
+              A list with all our suppliers.
+            </li>
+            <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif;">
+              A list with all promotions.
+              <br>and more.
+            </li>
+            <br>
+          </P>
+          <p class="profile-card__job-content">
+            Also possess interface for clients and they have privileges how: 
+            <br><br>
+            <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif;">
+              All movies in only place and details about them.
+            </li>
+            <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif;">
+              All active promotions.
+            </li>
+            <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif;">
+              A page for edit your profile.
+            </li>
+            <li style="list-style: none; font-family: 'Flama Light Italic', sans-serif;">
+              A shopping cart and a history with the movies seen.
+            </li>
+        </section>
+        <div class="content-link">
+          <img src="./img/Internet 3D Animated Icon.gif" alt="" class="link-icon">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/fsilvestre-2022163/MovieShop/tree/Dev" class="link-project">Go to Github</a>
+        </div>
+      </article>
+
+      <!-- Taskplanner -->
+      <article class="profile-card">
+        <section class="profile-card__hero">
+          <img src="./img/fotoTaskPlanner.png" alt="" class="project_image">
+          <header class="profile-card__header">
+            <span>Group project</span>
+            <div class="profile-card__icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABQ0lEQVR4nO2UO04DMRRFTw/04deA2AkUDNkGNQ2/UMJqUERFKEBZQBJ2gsRvaKgIetKNFHk8ybOldD7SU2T7zrXfnYmhUCj4OAEmwI9+q0xNFl1gGqkqUZPNq8yugDXgWuNxoiabWmbrGm9oXCdqspnIrKcNbiLdeTTZHAF/kfd7nKhxswP0FZ/VA3CmbuwLH7UYV4HmNOJz4Nn8PdKJzW0nNpHl05fwUUKrgebuEw6Q7VNLNH/KXc19BR0uitfr0+BbItug7UFPvB6fhdEN9LDVUxCdJ16PT5R9fcVhdza3lxCvxyfKXcudbnWbEK/HJ/o/ngK/wDmwqbrQ3OxiWRav16fBUIv2UMil1l4U7+w1zFeteL0+DT61aKcN2dLah+77tnh7CT5ZHDriNc3KeHbEa5qV8aZNOpG1jtZMUygU8PIPnUrg9TdInUMAAAAASUVORK5CYII=" alt="groups">             
+            </div>
+          </header>
+          <p class="profile-card__job-title" translate="no">Taskplanner</p>
+          <p class="profile-card__job-content">
+            Taskplanner is a project developed with the purpose of help people in organize tasks in the day to day.
+            <br><br>
+            He is in charge of organizing all notes. In this project your can create, read, update and delete all the tasks
+            <br><br>
+            This project as developed for a group of programmers with NodeJs, ReactJS, Bootstrap and connected with MySQL.
+          </p>
+        </section>
+        <div class="content-link">
+          <img src="./img/Internet 3D Animated Icon.gif" alt="" class="link-icon">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/bjulian-2022033/PMAAlmacenadora.git" class="link-project">Go to Github</a>
+        </div>
+      </article>
+
+      <!-- Ahorcado -->
+      <article class="profile-card">
+        <section class="profile-card__hero">
+          <img src="./img/img-ahorcado.png" alt="" class="project_image">
+          <header class="profile-card__header">
+            <span>Personal Project</span>
+            <div class="profile-card__icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJklEQVR4nO2YPW7CQBSEh4KrBMQBoHXBTxPOg6igSk4QrsMB0iahSlJgOriApbxFK1mRbfCubVmrcfI+aRpLb3fG8wrLgKIodVkCiAEYUsUAHqsEORGYNR5Zj15+UrEiqbxokECINkKGaCNkiDZChmgjZIg2QoZoI2SINkKGaCNkiDZChmgjZIg20tVGPgn+JBqPrEcnfQAXAqPGo3PqtZSFY/gN4Xl3+Jm5BneOwQ3Cs3X4eSkb6gE4OgZHCM/Q80feer5hQrD7pqbG94I8ExgzNfV0L8ihpcP3FVZm39JdH8WDH1p8S1GFIFGL9w2yB68J1qSpVtkgrwSGmsp6/yUhMNRUSTFI7kFHSP5skC+CFWmq3JfwHMA3gSlTU7aAafA9UP4TV9S/yOKiFSQQAAAAAElFTkSuQmCC" alt="laptop">             
+            </div>
+          </header>
+          <p class="profile-card__job-title" >Hanged</p>
+          <p class="profile-card__job-content">
+            This is my first project in HTML, i wanted to created a project about a hanged game with JS.
+            <br><br>
+            This game possess a menu with nineteen words and random system to ensure that words are not repeated. 
+            <br><br>
+            The game has a seven lives system for the player, if the player lose all the lives a loser screen will be displayed
+          <br><br>
+          Developed with HTML, CSS and JS.
+          </p>
+        </section>
+        <div class="content-link">
+          <img src="./img/Internet 3D Animated Icon.gif" alt="" class="link-icon">
+          <a target="_blank" rel="noopener noreferrer" href="https://myac-2022020.github.io/Ahorcado2024/juego.html" class="link-project">Go to Github</a>
+        </div>
+      </article>
       
+      <!-- Control academico -->
+      <article class="profile-card">
+        <section class="profile-card__hero">
+          <img src="./img/img-academy-control.png" alt="" class="project_image">
+          <header class="profile-card__header">
+            <span>Personal Project</span>
+            <div class="profile-card__icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJklEQVR4nO2YPW7CQBSEh4KrBMQBoHXBTxPOg6igSk4QrsMB0iahSlJgOriApbxFK1mRbfCubVmrcfI+aRpLb3fG8wrLgKIodVkCiAEYUsUAHqsEORGYNR5Zj15+UrEiqbxokECINkKGaCNkiDZChmgjZIg2QoZoI2SINkKGaCNkiDZChmgjZIg20tVGPgn+JBqPrEcnfQAXAqPGo3PqtZSFY/gN4Xl3+Jm5BneOwQ3Cs3X4eSkb6gE4OgZHCM/Q80feer5hQrD7pqbG94I8ExgzNfV0L8ihpcP3FVZm39JdH8WDH1p8S1GFIFGL9w2yB68J1qSpVtkgrwSGmsp6/yUhMNRUSTFI7kFHSP5skC+CFWmq3JfwHMA3gSlTU7aAafA9UP4TV9S/yOKiFSQQAAAAAElFTkSuQmCC" alt="laptop">             
+            </div>
+          </header>
+          <p class="profile-card__job-title" >Academy Control</p>
+          <p class="profile-card__job-content">
+            This is the backend of an academic control, it controls the assignments to courses and who can also create the courses.
+            <br><br>
+            Developed from NodeJS and MongoDBCompass, this program seeks to manage and assimilate the function of an academic course system.
+          <br><br>
+          Developed with NodeJS and MongoDBCompass.
+          </p>
+        </section>
+        <div class="content-link">
+          <img src="./img/Internet 3D Animated Icon.gif" alt="" class="link-icon">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/myac-2022020/academyControlFinished.git" class="link-project">Go to Github</a>
+        </div>
+      </article>
     </div>
   </div>
+  <div class="contactMe" id="contact">
+    <h1>Contact</h1>
+    <form class="direct-message">
+      <p>Do you have an idea? Contact Me</p>
+    
+      <!-- Name -->
+      <div class="input-group">
+        <input required type="text" name="from_name" id="from_name" autocomplete="off" class="input">
+        <label class="user-label" for="from_name" >Name</label>
+      </div>
+    
+      <!-- Email -->
+      <div class="input-group">
+        <input required type="email" name="reply_to" id="reply_to" autocomplete="off" class="input">
+        <label class="user-label" for="reply_to">Email</label>
+      </div>
+    
+      <!-- Matter -->
+      <div class="input-group" style="width: 99%;">
+        <input required type="text" name="subject" id="subject" autocomplete="off" class="input">
+        <label class="user-label" for="subject">Matter</label>
+      </div>
+    
+      <!-- Message -->
+      <div class="input-group" style="width: 99%;">
+        <textarea required name="message" id="message" autocomplete="off" class="input auto-grow"></textarea>
+        <label class="user-label" for="message">Message</label>
+      </div>
+
+    
+      <!-- Button for send message -->
+      <button class="send-button" type="submit">
+        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path>
+        </svg>
+        <p>Submit</p>
+      </button>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <script type="text/javascript">
+        emailjs.init('7z16U2fjE7AJT-RIU')
+      </script>
+    </form>    
+    <div class="socials">
+      <div class="social-links">
+        <span class="title-socials">My Socials</span>
+        <div id="instagram" class="social-btn flex-center">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"> <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12 C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path></svg>
+          <span>@miguel_yc_</span>
+        </div>
+        <div id="github" class="social-btn flex-center">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"> <path fill-rule="evenodd" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"></path> </svg>
+          <span>Miguel_YC_</span>
+        </div>
+        <div id="linkedin" class="social-btn flex-center">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"> <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path> </svg>
+          <span>Miguel<span style="color: #000;"></span>Yac</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 Miguel Yac. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
